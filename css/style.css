@@ -426,12 +426,33 @@ iframe {
 
 /*GALERIA*/
 
-.container-galeria {
+.hero-card {
     display: flex;
-    width: 50%;
-    height: 500px;
+    margin: 5px 20px;
+    width: 100%;
+    height: 600px;
 }
 
+.hero-card-header {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-card-content {
+    color: rgb(56, 45, 33);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 10px;
+}
+
+.carousel-inner {
+    height: 500px;
+}
 
 /*FOOTER*/
 footer {
@@ -463,8 +484,8 @@ footer {
 }
 
 @media only screen and (max-width: 767px) {
-	.footer {
-		display: flex;
-		flex-direction: column;
-	}
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
 }
