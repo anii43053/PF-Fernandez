@@ -1,0 +1,31 @@
+//base
+@import '../base/vars';
+@import '../base/reset';
+@import '../base/utils';
+
+/*GALERIA*/
+
+
+.hero-card {
+    display: flex;
+    @include images(100%, 600px);
+
+    .hero-card-header {
+        width: 50%;
+        @include flexs;
+        margin-top: 350px;
+        margin-bottom: 350px;
+    }
+
+    .hero-card-content {
+        color: $secondColor;
+        @include flexs;
+        flex-direction: column;
+        width: 50%;
+        padding: 10px;
+    }
+
+    .carousel-inner {
+        height: 500px;
+    }
+}

@@ -1,0 +1,54 @@
+//base
+@import 'base/vars';
+@import 'base/reset';
+@import 'base/utils';
+
+//components
+@import 'components/navbar';
+@import 'components/footer';
+
+//layout
+@import 'layout/index';
+@import 'layout/contacto';
+@import 'layout/galeria';
+@import 'layout/historia';
+@import 'layout/turismo';
+@import 'layout/mediaqueries';
+
+// Main
+
+.textos {
+    h1 {
+        @include fonts (30px, $secondFont, bold);
+        color: $secondColor;
+        padding: 10px;
+        margin: 5px;
+        @include flexs;
+    }
+
+    h2 {
+        @include fonts (32px, $secondFont, bold);
+        color: $secondColor;
+        padding: 5px;
+        margin: 10px;
+        @include flexs;
+    }
+
+    h3 {
+        @include fonts (30px, $mainFont, bolder);
+        color: $secondColor;
+        padding: 5px;
+        margin: 10px;
+        @include flexs;
+    }
+
+    p {
+        @include fonts (28px, $mainFont, none);
+        color: $secondColor;
+        padding: 5px;
+        margin: 1px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

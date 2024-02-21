@@ -1,0 +1,47 @@
+@media (max-width: 768px) {
+    .navbar-nav {
+        margin-top: 10px;
+    }
+
+    .navbar-brand {
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container-visitanos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .container-mapa {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .formulario {
+        grid-column: auto; 
+        width: min(90vw, 100%); 
+        margin-bottom: 2rem; }
+
+    .campo label {
+        margin: 0.5rem 0; 
+    }
+
+    .campo input,
+    .campo textarea {
+        height: 2.5rem; 
+    }
+}

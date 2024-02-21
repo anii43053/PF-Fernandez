@@ -1,0 +1,68 @@
+//base
+@import '../base/vars';
+@import '../base/reset';
+@import '../base/utils';
+
+//components
+@import '../components/navbar';
+@import '../components/footer';
+
+//layout
+@import '../layout/galeria';
+@import '../layout/contacto';
+@import '../layout/historia';
+@import '../layout/turismo';
+@import '../layout/mediaqueries';
+
+.main-inicio {
+    margin: 0;
+    padding: 0;
+    @include flexs;
+    @include background;
+    background-image: url(../assets/Images/foto-inicio.jpg);
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.wave_i {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.container-visitanos {
+    width: auto;
+    padding: 50px 20px;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.transporte {
+    @include flexs;
+    flex-direction: column;
+    @include images (500, 500px);
+    padding: 10px;
+    margin: 10px;
+
+    h2 {
+        @include fonts (32px, $secondFont, bold);
+        color: $secondColor;
+    }
+
+    li {
+        @include fonts (28px, $mainFont, none);
+        color: $secondColor;
+    }
+}
+
+iframe {
+    @include images (600px, 500px);
+    align-content: center;
+}
+
+
+.buttom.navbar-toggler {
+    color: $light-color;
+}

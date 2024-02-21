@@ -1,488 +1,1063 @@
+@charset "UTF-8";
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
 }
 
-/*object-fit: cover*/
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
 
 body {
-    background-color: rgb(228, 224, 212);
-    margin: 0;
-    padding: 0;
+  background-color: rgb(228, 224, 212);
 }
 
-/*Fuentes*/
-
-@font-face {
-    font-family: "PatuaOne";
-    src: url(../assets/Fonts/Patua_One/PatuaOne-Regular.ttf);
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
 }
 
-@font-face {
-    font-family: "Poppins";
-    src: url(../assets/Fonts/Poppins/Poppins-Light.ttf);
+a {
+  text-decoration: none;
 }
 
+li {
+  list-style-type: none;
+}
 
-/* Nav*/
+body {
+  background-color: rgb(228, 224, 212);
+}
 
 .navbar {
-    background-color: rgb(108, 125, 81);
-    padding: 20px;
-    margin-bottom: 10px;
-    height: 15%;
-    position: sticky, 0;
+  background-color: rgb(108, 125, 81);
+  background: linear-gradient(45deg, rgb(59, 70, 43), rgb(108, 125, 81));
+  padding: 20px;
+  margin-bottom: 10px;
+  height: 20%;
+  position: sticky, 0;
 }
-
-
-.nav-list {
-    list-style: none;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-
+.navbar .nav-list {
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-link,
 .nav-link.active.active {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    text-decoration: none;
-    color: rgb(66, 40, 28);
-    font-size: 26px;
-    font-family: 'Kanit';
-    font-weight: bold;
-    padding: 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0px 20px;
+  text-decoration: none;
+  color: rgb(66, 40, 28);
+  font-size: 26px;
+  font-family: "PatuaOne";
+  font-weight: bold;
 }
 
 .nav-link:hover,
 .nav-link.active:hover {
-    color: rgb(228, 224, 212);
+  color: rgb(228, 224, 212);
 }
 
 .logo {
-    width: 15%;
-    height: 100%;
-    border-radius: 100%;
+  width: 15%;
+  height: 100%;
+  border-radius: 100%;
 }
 
 .navbar-toggler {
-    border: none;
-    font-size: 1.5rem;
+  border: none;
+  font-size: 1.5rem;
+  color: rgb(228, 224, 212);
 }
 
-
-/*Main*/
-
-.textos h1 {
-    font-size: 30px;
-    font-family: 'PatuaOne';
-    color: rgb(66, 40, 28);
-    padding: 10px;
-    margin: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
 }
 
-.textos h2 {
-    font-size: 32px;
-    font-family: 'PatuaOne';
-    font-weight: bold;
-    color: rgb(66, 40, 28);
-    padding: 5px;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+a {
+  text-decoration: none;
 }
 
-.textos h3 {
-    font-size: 30px;
-    font-family: 'Poppins';
-    font-weight: bolder;
-    color: rgb(66, 40, 28);
-    padding: 5px;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+li {
+  list-style-type: none;
 }
 
-.textos p {
-    font-size: 28px;
-    font-family: 'Poppins';
-    color: rgb(66, 40, 28);
-    padding: 5px;
-    margin: 1px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+body {
+  background-color: rgb(228, 224, 212);
 }
 
-/*INICIO*/
-
-@media (min-width: 1920px) {
-    .container-visitanos {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .iframe {
-        width: 80%;
-    height: 80%;
-    }
+footer {
+  height: 100px;
+  background: linear-gradient(45deg, rgb(108, 125, 81), rgb(59, 70, 43));
+  padding: 10px;
+  margin-top: 10px;
+  color: rgb(66, 40, 28);
+  font-size: 20px;
+  font-family: "PatuaOne";
+  font-weight: bold;
+}
+footer .footer-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-text {
+  display: flex;
+  justify-content: center;
+  align-items: end;
 }
 
-.main-inicio {
-    margin: 0;
-    padding: 0;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(56, 45, 33);
-    background-image: url(../assets/Images/foto-inicio.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: unset;
-    background-position: center;
-    height: 70vh;
-    position: relative;
-    overflow: hidden;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
 }
 
-.wave_i {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+a {
+  text-decoration: none;
 }
 
-.container-visitanos {
-    align-items: center;
-    justify-items: center;
-    width: auto;
-    padding: 50px 20px;
-    gap: 20px;
+li {
+  list-style-type: none;
 }
 
-.transporte {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    width: 500;
-    height: 500px;
-    padding: 10px;
-    margin: 10px;
+body {
+  background-color: rgb(228, 224, 212);
 }
 
-.transporte h2 {
-    font-size: 32px;
-    font-family: 'PatuaOne';
-    font-weight: bold;
-    color: rgb(66, 40, 28);
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
 }
 
-.transporte li {
-    font-size: 28px;
-    font-family: 'Poppins';
-    color: rgb(66, 40, 28);
+a {
+  text-decoration: none;
 }
 
-iframe {
-    width: 1000px;
-    height: 500px;
+li {
+  list-style-type: none;
 }
 
-/*HISTORIA*/
-
-.main-historia {
-    margin: 0;
-    padding: 0;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(56, 45, 33);
-    background-image: url(../assets/Images/foto-historia.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: unset;
-    background-position: center;
-    height: 80vh;
-    position: relative;
-    overflow: hidden;
+body {
+  background-color: rgb(228, 224, 212);
 }
 
-.textos-historia {
-    font-size: 16px;
-    font-family: 'Poppins';
-    color: rgb(66, 40, 28);
-    padding: 5px;
-    margin: 1px;
-    width: 400px;
+.navbar {
+  background-color: rgb(108, 125, 81);
+  background: linear-gradient(45deg, rgb(59, 70, 43), rgb(108, 125, 81));
+  padding: 20px;
+  margin-bottom: 10px;
+  height: 20%;
+  position: sticky, 0;
+}
+.navbar .nav-list {
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.grid-historia {
-    width: 100%;
-    max-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.nav-link,
+.nav-link.active.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0px 20px;
+  text-decoration: none;
+  color: rgb(66, 40, 28);
+  font-size: 26px;
+  font-family: "PatuaOne";
+  font-weight: bold;
 }
 
-.grid-historia .box-historia {
-    width: 400px;
-    height: 300px;
-    border-radius: 20px;
-    box-shadow: 0 2px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    margin: 20px;
-    text-align: center;
-    transition: all 0.45s;
-    align-items: center;
-    justify-items: center;
+.nav-link:hover,
+.nav-link.active:hover {
+  color: rgb(228, 224, 212);
 }
 
-.box-historia {
-    background-color: rgba(193, 185, 162, 0.778);
-    padding: 1%;
+.logo {
+  width: 15%;
+  height: 100%;
+  border-radius: 100%;
 }
 
-.grid-historia .box-historia:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+.navbar-toggler {
+  border: none;
+  font-size: 1.5rem;
+  color: rgb(228, 224, 212);
 }
 
-/*TURISMO*/
-
-
-.main-turismo {
-    margin: 0;
-    padding: 0;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(56, 45, 33);
-    background-image: url(../assets/Images/foto-turismo.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: unset;
-    background-position: center;
-    height: 80vh;
-    position: relative;
-    overflow: hidden;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
 }
 
-.box {
-    width: 100%;
-    height: 100%;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    border-radius: 15px;
-    border: 1px solid white;
+a {
+  text-decoration: none;
 }
 
-.box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: blur(2px);
-    position: absolute;
-    border-radius: 8px;
-    border: 1px solid white;
-    box-shadow: 2px 2px 6px 2px rgba(255, 235, 205, 0.193);
+li {
+  list-style-type: none;
 }
 
-.box div {
-    z-index: 3;
-    border-radius: 14px;
-    background-color: #4d4b4b34;
-    color: white;
-    font-family: 'Kanit';
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    grid-area: a1;
+body {
+  background-color: rgb(228, 224, 212);
 }
 
-.b1 {
-    grid-area: a1;
+footer {
+  height: 100px;
+  background: linear-gradient(45deg, rgb(108, 125, 81), rgb(59, 70, 43));
+  padding: 10px;
+  margin-top: 10px;
+  color: rgb(66, 40, 28);
+  font-size: 20px;
+  font-family: "PatuaOne";
+  font-weight: bold;
+}
+footer .footer-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-text {
+  display: flex;
+  justify-content: center;
+  align-items: end;
 }
 
-
-.b2 {
-    grid-area: a2;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
 }
 
-.b3 {
-    grid-area: a3;
+a {
+  text-decoration: none;
 }
 
-.b4 {
-    grid-area: a4;
+li {
+  list-style-type: none;
 }
 
-.b5 {
-    grid-area: a5;
-}
-
-.b6 {
-    grid-area: a6;
-}
-
-.grid {
-    padding: 15px;
-    display: grid;
-    grid-template-rows: repeat(3, 300px);
-    gap: 15px;
-    grid-template-areas:
-        'a6 a6 a2'
-        'a5 a3 a2'
-        'a4 a3 a1';
-}
-
-
-/*CONTACTO*/
-
-.main-contacto {
-    margin: 0;
-    padding: 0;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(56, 45, 33);
-    background-image: url(../assets/Images/foto-contacto.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: unset;
-    background-position: center;
-    height: 80vh;
-    position: relative;
-    overflow: hidden;
-}
-
-.formulario {
-    grid-column: 1/13;
-    background-color: var(--primarioº);
-    width: min(60rem, 100%);
-    margin: 0 auto;
-    margin-bottom: 3rem;
-    font-family: 'Poppins';
-}
-
-.formulario legend {
-    color: var(--secundario);
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 600;
-}
-
-.campo label {
-    display: block;
-    margin: 1rem 0 .5rem 0;
-    padding: 5px;
-    width: 100%;
-    font-weight: 200;
-}
-
-.campo input {
-    border-radius: .5rem;
-    padding: 5px;
-    border: 1rem var(--negro);
-    box-shadow: 2px 2px 2px 1px rgb(108, 125, 81);
-    height: 3rem;
-    width: 100%;
-}
-
-.campo textarea {
-    border-radius: .5rem;
-    padding: 5px;
-    border: 1rem var(--negro);
-    box-shadow: 2px 2px 2px 1px rgb(108, 125, 81);
-    height: 8rem;
-    width: 100%;
-}
-
-.boton-formulario {
-    display: inline-block;
-    width: 100%;
-    text-align: right;
-    margin: 10px;
-}
-
-.boton-formulario input {
-    padding: 5px;
-    border-radius: .5rem;
-    box-shadow: 2px 2px 2px 1px rgb(108, 125, 81);
+body {
+  background-color: rgb(228, 224, 212);
 }
 
 /*GALERIA*/
-
-
 .hero-card {
-    display: flex;
-    width: 100%;
-    height: 600px;
+  display: flex;
+  width: 100%;
+  height: 600px;
+}
+.hero-card .hero-card-header {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 350px;
+  margin-bottom: 350px;
+}
+.hero-card .hero-card-content {
+  color: rgb(66, 40, 28);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  padding: 10px;
+}
+.hero-card .carousel-inner {
+  height: 500px;
 }
 
-.hero-card-header {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 350px;
-    margin-bottom: 350px;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
 }
 
-.hero-card-content {
-    color: rgb(56, 45, 33);
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  background-color: rgb(228, 224, 212);
+}
+
+/*CONTACTO*/
+.main-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+  flex-direction: column;
+  background-color: rgb(66, 40, 28);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: unset;
+  background-position: center;
+  background-image: url(../assets/Images/foto-contacto.jpg);
+}
+
+.formulario {
+  grid-column: 1/13;
+  background-color: var(--primarioº);
+  width: min(60rem, 100%);
+  margin: 0 auto 3rem;
+  font-family: "Poppins";
+}
+.formulario legend {
+  color: var(--secundario);
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+.formulario .campo label {
+  display: block;
+  margin: 1rem 0 0.5rem 0;
+  padding: 5px;
+  width: 100%;
+  font-weight: 200;
+}
+.formulario .campo input {
+  border-radius: 0.5rem;
+  padding: 5px;
+  border: 1rem var(--negro);
+  box-shadow: 2px 2px 2px 1px rgb(108, 125, 81);
+  height: 3rem;
+  width: 100%;
+}
+.formulario .campo textarea {
+  border-radius: 0.5rem;
+  padding: 5px;
+  border: 1rem var(--negro);
+  box-shadow: 2px 2px 2px 1px rgb(108, 125, 81);
+  height: 8rem;
+  width: 100%;
+}
+.formulario .boton-formulario {
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+  margin: 10px;
+}
+.formulario .boton-formulario input {
+  padding: 5px;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 2px 1px rgb(108, 125, 81);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  background-color: rgb(228, 224, 212);
+}
+
+/*HISTORIA*/
+.main-historia {
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(66, 40, 28);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: unset;
+  background-position: center;
+  background-image: url(../assets/Images/foto-historia.jpg);
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.textos-historia {
+  font-size: 16px;
+  font-family: "Poppins";
+  font-weight: none;
+  color: rgb(66, 40, 28);
+  padding: 5px;
+  margin: 1px;
+  width: 400px;
+}
+
+.grid-historia {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.grid-historia .box-historia {
+  border-radius: 20px;
+  box-shadow: 0 2px rgb(66, 40, 28);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.45s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 300px;
+}
+
+.box-historia {
+  background-color: rgba(193, 185, 162, 0.778);
+  padding: 1%;
+}
+
+.grid-historia .box-historia:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgb(66, 40, 28);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  background-color: rgb(228, 224, 212);
+}
+
+/*TURISMO*/
+.main-turismo {
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(66, 40, 28);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: unset;
+  background-position: center;
+  background-image: url(../assets/Images/foto-turismo.jpg);
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 15px;
+  border: 1px solid white;
+}
+.box img {
+  object-fit: cover;
+  filter: blur(2px);
+  position: absolute;
+  border-radius: 8px;
+  border: 1px solid white;
+  box-shadow: 2px 2px 6px 2px rgb(66, 40, 28);
+  width: 100%;
+  height: 100%;
+}
+.box div {
+  z-index: 3;
+  border-radius: 14px;
+  background-color: rgba(77, 75, 75, 0.2);
+  color: white;
+  font-family: "PatuaOne";
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-area: a1;
+}
+
+b1 {
+  grid-area: a1;
+}
+
+.b2 {
+  grid-area: a2;
+}
+
+.b3 {
+  grid-area: a3;
+}
+
+.b4 {
+  grid-area: a4;
+}
+
+.b5 {
+  grid-area: a5;
+}
+
+.b6 {
+  grid-area: a6;
+}
+
+.grid {
+  padding: 15px;
+  display: grid;
+  grid-template-rows: repeat(3, 300px);
+  gap: 15px;
+  grid-template-areas: "a6 a6 a2" "a5 a3 a2" "a4 a3 a1";
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    margin-top: 10px;
+  }
+  .navbar-brand {
+    margin-right: auto;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+  }
+}
+@media (max-width: 1000px) {
+  .container-visitanos {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    width: 50%;
-    padding: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .container-mapa {
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .formulario {
+    grid-column: auto;
+    width: min(90vw, 100%);
+    margin-bottom: 2rem;
+  }
+  .campo label {
+    margin: 0.5rem 0;
+  }
+  .campo input,
+  .campo textarea {
+    height: 2.5rem;
+  }
+}
+.main-inicio {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(66, 40, 28);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: unset;
+  background-position: center;
+  background-image: url(../assets/Images/foto-inicio.jpg);
+  height: 70vh;
+  position: relative;
+  overflow: hidden;
 }
 
-.carousel-inner {
-    height: 500px;
+.wave_i {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
+.container-visitanos {
+  width: auto;
+  padding: 50px 20px;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+}
 
-/*FOOTER*/
-footer {
-    height: 100px;
-    background-color: rgb(108, 125, 81);
-    padding: 10px;
+.transporte {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 500;
+  height: 500px;
+  padding: 10px;
+  margin: 10px;
+}
+.transporte h2 {
+  font-size: 32px;
+  font-family: "PatuaOne";
+  font-weight: bold;
+  color: rgb(66, 40, 28);
+}
+.transporte li {
+  font-size: 28px;
+  font-family: "Poppins";
+  font-weight: none;
+  color: rgb(66, 40, 28);
+}
+
+iframe {
+  width: 600px;
+  height: 500px;
+  align-content: center;
+}
+
+.buttom.navbar-toggler {
+  color: rgba(193, 185, 162, 0.778);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  background-color: rgb(228, 224, 212);
+}
+
+/*CONTACTO*/
+.main-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+  flex-direction: column;
+  background-color: rgb(66, 40, 28);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: unset;
+  background-position: center;
+  background-image: url(../assets/Images/foto-contacto.jpg);
+}
+
+.formulario {
+  grid-column: 1/13;
+  background-color: var(--primarioº);
+  width: min(60rem, 100%);
+  margin: 0 auto 3rem;
+  font-family: "Poppins";
+}
+.formulario legend {
+  color: var(--secundario);
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+.formulario .campo label {
+  display: block;
+  margin: 1rem 0 0.5rem 0;
+  padding: 5px;
+  width: 100%;
+  font-weight: 200;
+}
+.formulario .campo input {
+  border-radius: 0.5rem;
+  padding: 5px;
+  border: 1rem var(--negro);
+  box-shadow: 2px 2px 2px 1px rgb(108, 125, 81);
+  height: 3rem;
+  width: 100%;
+}
+.formulario .campo textarea {
+  border-radius: 0.5rem;
+  padding: 5px;
+  border: 1rem var(--negro);
+  box-shadow: 2px 2px 2px 1px rgb(108, 125, 81);
+  height: 8rem;
+  width: 100%;
+}
+.formulario .boton-formulario {
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+  margin: 10px;
+}
+.formulario .boton-formulario input {
+  padding: 5px;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 2px 1px rgb(108, 125, 81);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  background-color: rgb(228, 224, 212);
+}
+
+/*GALERIA*/
+.hero-card {
+  display: flex;
+  width: 100%;
+  height: 600px;
+}
+.hero-card .hero-card-header {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 350px;
+  margin-bottom: 350px;
+}
+.hero-card .hero-card-content {
+  color: rgb(66, 40, 28);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  padding: 10px;
+}
+.hero-card .carousel-inner {
+  height: 500px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  background-color: rgb(228, 224, 212);
+}
+
+/*HISTORIA*/
+.main-historia {
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(66, 40, 28);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: unset;
+  background-position: center;
+  background-image: url(../assets/Images/foto-historia.jpg);
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.textos-historia {
+  font-size: 16px;
+  font-family: "Poppins";
+  font-weight: none;
+  color: rgb(66, 40, 28);
+  padding: 5px;
+  margin: 1px;
+  width: 400px;
+}
+
+.grid-historia {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.grid-historia .box-historia {
+  border-radius: 20px;
+  box-shadow: 0 2px rgb(66, 40, 28);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.45s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 300px;
+}
+
+.box-historia {
+  background-color: rgba(193, 185, 162, 0.778);
+  padding: 1%;
+}
+
+.grid-historia .box-historia:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgb(66, 40, 28);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  background-color: rgb(228, 224, 212);
+}
+
+/*TURISMO*/
+.main-turismo {
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(66, 40, 28);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: unset;
+  background-position: center;
+  background-image: url(../assets/Images/foto-turismo.jpg);
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 15px;
+  border: 1px solid white;
+}
+.box img {
+  object-fit: cover;
+  filter: blur(2px);
+  position: absolute;
+  border-radius: 8px;
+  border: 1px solid white;
+  box-shadow: 2px 2px 6px 2px rgb(66, 40, 28);
+  width: 100%;
+  height: 100%;
+}
+.box div {
+  z-index: 3;
+  border-radius: 14px;
+  background-color: rgba(77, 75, 75, 0.2);
+  color: white;
+  font-family: "PatuaOne";
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-area: a1;
+}
+
+b1 {
+  grid-area: a1;
+}
+
+.b2 {
+  grid-area: a2;
+}
+
+.b3 {
+  grid-area: a3;
+}
+
+.b4 {
+  grid-area: a4;
+}
+
+.b5 {
+  grid-area: a5;
+}
+
+.b6 {
+  grid-area: a6;
+}
+
+.grid {
+  padding: 15px;
+  display: grid;
+  grid-template-rows: repeat(3, 300px);
+  gap: 15px;
+  grid-template-areas: "a6 a6 a2" "a5 a3 a2" "a4 a3 a1";
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
     margin-top: 10px;
-    font-size: 20px;
-    font-family: 'Kanit';
-    color: rgb(66, 40, 28);
+  }
+  .navbar-brand {
+    margin-right: auto;
+  }
 }
-
-.footer-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer-text {
-    display: flex;
-    justify-content: center;
-    align-items: end;
-}
-
 @media only screen and (max-width: 767px) {
-    .footer {
-        display: flex;
-        flex-direction: column;
-    }
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
 }
+@media (max-width: 1000px) {
+  .container-visitanos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 576px) {
+  .container-mapa {
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .formulario {
+    grid-column: auto;
+    width: min(90vw, 100%);
+    margin-bottom: 2rem;
+  }
+  .campo label {
+    margin: 0.5rem 0;
+  }
+  .campo input,
+  .campo textarea {
+    height: 2.5rem;
+  }
+}
+.textos h1 {
+  font-size: 30px;
+  font-family: "PatuaOne";
+  font-weight: bold;
+  color: rgb(66, 40, 28);
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textos h2 {
+  font-size: 32px;
+  font-family: "PatuaOne";
+  font-weight: bold;
+  color: rgb(66, 40, 28);
+  padding: 5px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textos h3 {
+  font-size: 30px;
+  font-family: "Poppins";
+  font-weight: bolder;
+  color: rgb(66, 40, 28);
+  padding: 5px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textos p {
+  font-size: 28px;
+  font-family: "Poppins";
+  font-weight: none;
+  color: rgb(66, 40, 28);
+  padding: 5px;
+  margin: 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */

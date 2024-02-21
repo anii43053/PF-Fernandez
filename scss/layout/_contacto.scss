@@ -1,0 +1,71 @@
+//base
+@import '../base/vars';
+@import '../base/reset';
+@import '../base/utils';
+
+/*CONTACTO*/
+
+.main-contacto {
+    @include flexs;
+    margin: 0;
+    padding: 0;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+    @include background;
+    background-image: url(../assets/Images/foto-contacto.jpg);
+}
+
+.formulario {
+    grid-column: 1/13;
+    background-color: var(--primarioº);
+    width: min(60rem, 100%);
+    margin: 0 auto 3rem;
+    font-family: $mainFont;
+
+    legend {
+        color: var(--secundario);
+        text-align: center;
+        @include fonts (2rem, $mainFont, 600);
+    }
+
+    .campo label {
+        display: block;
+        margin: 1rem 0 .5rem 0;
+        padding: 5px;
+        width: 100%;
+        font-weight: 200;
+    }
+
+    .campo input {
+        border-radius: .5rem;
+        padding: 5px;
+        border: 1rem var(--negro);
+        box-shadow: 2px 2px 2px 1px $mainColor;
+        height: 3rem;
+        width: 100%;
+    }
+
+    .campo textarea {
+        border-radius: .5rem;
+        padding: 5px;
+        border: 1rem var(--negro);
+        box-shadow: 2px 2px 2px 1px $mainColor;
+        height: 8rem;
+        width: 100%;
+    }
+
+    .boton-formulario {
+        display: inline-block;
+        width: 100%;
+        text-align: right;
+        margin: 10px;
+
+        input {
+            padding: 5px;
+            border-radius: .5rem;
+            box-shadow: 2px 2px 2px 1px $mainColor;
+        }
+    }
+}

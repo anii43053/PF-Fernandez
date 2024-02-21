@@ -1,0 +1,19 @@
+{
+  "name": "coder",
+  "version": "1.0.0",
+  "description": "```bash\r Un sitio web donde podes conocer un poco del pueblo de Ramon Biaus\r ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anii43053/PreEntrega2-Fernandez.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anii43053/PreEntrega2-Fernandez/issues"
+  },
+  "homepage": "https://github.com/anii43053/PreEntrega2-Fernandez#readme"
+}

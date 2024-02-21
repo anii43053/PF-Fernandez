@@ -1,0 +1,90 @@
+//base
+@import '../base/vars';
+@import '../base/reset';
+@import '../base/utils';
+
+/*TURISMO*/
+
+.main-turismo {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+    @include background;
+    background-image: url(../assets/Images/foto-turismo.jpg);
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    @include flexs;
+    position: relative;
+    border-radius: 15px;
+    border: 1px solid white;
+
+    img {
+        object-fit: cover;
+        filter: blur(2px);
+        position: absolute;
+        border-radius: 8px;
+        border: 1px solid white;
+        box-shadow: 2px 2px 6px 2px $secondColor;
+        @include images(100%, 100%);
+    }
+
+    div {
+        z-index: 3;
+        border-radius: 14px;
+        background-color: rgba(#4d4b4b, 0.2);
+        color: white;
+        font-family: $secondFont;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-area: a1;
+    }
+}
+
+b1 {
+    grid-area: a1;
+}
+
+
+.b2 {
+    grid-area: a2;
+}
+
+.b3 {
+    grid-area: a3;
+}
+
+.b4 {
+    grid-area: a4;
+}
+
+.b5 {
+    grid-area: a5;
+}
+
+.b6 {
+    grid-area: a6;
+}
+
+.grid {
+    padding: 15px;
+    display: grid;
+    grid-template-rows: repeat(3, 300px);
+    gap: 15px;
+    grid-template-areas:
+        'a6 a6 a2'
+        'a5 a3 a2'
+        'a4 a3 a1';
+}

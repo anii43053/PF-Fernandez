@@ -1,0 +1,56 @@
+//base
+@import '../base/vars';
+@import '../base/reset';
+@import '../base/utils';
+
+
+/*HISTORIA*/
+
+.main-historia {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    @include flexs;
+    @include background;
+    background-image: url(../assets/Images/foto-historia.jpg);
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.textos-historia {
+    @include fonts (16px, $mainFont, none);
+    color: $secondColor;
+    padding: 5px;
+    margin: 1px;
+    width: 400px;
+}
+
+.grid-historia {
+    width: 100%;
+    max-width: 100%;
+    @include flexs;
+    flex-wrap: wrap;
+
+}
+
+.grid-historia .box-historia {
+    border-radius: 20px;
+    box-shadow: 0 2px $secondColor;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.45s;
+    @include flexs;
+    @include images(450px, 300px )
+}
+
+.box-historia {
+    background-color: $light-color;
+    padding: 1%;
+}
+
+.grid-historia .box-historia:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px $secondColor;
+}

@@ -1,0 +1,25 @@
+
+@mixin images($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin flexs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin fonts ($size, $family, $weight) {
+    font-size: $size;
+    font-family: $family;
+    font-weight: $weight;
+}
+
+@mixin background {
+    background-color: $secondColor;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: unset;
+    background-position: center;
+}

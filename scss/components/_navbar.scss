@@ -1,0 +1,47 @@
+//base
+@import '../base/vars';
+@import '../base/reset';
+@import '../base/utils';
+
+// Nav
+
+.navbar {
+    background-color: $mainColor;
+    background: linear-gradient(45deg, rgb(59, 70, 43), $mainColor);
+    padding: 20px;
+    margin-bottom: 10px;
+    height: 20%;
+    position: sticky, 0;
+
+    .nav-list {
+        gap: 10px;
+        @include flexs;
+    }
+}
+
+.nav-link,
+.nav-link.active.active {
+    @include flexs;
+    gap: 10px;
+    padding: 0px 20px;
+    text-decoration: none;
+    color: $secondColor;
+    @include fonts (26px, $secondFont, bold);
+}
+
+.nav-link:hover,
+.nav-link.active:hover {
+    color: $second-light-color;
+}
+
+.logo {
+    @include images (15%, 100%);
+    border-radius: 100%;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.5rem;
+    color: $second-light-color;
+}
+
