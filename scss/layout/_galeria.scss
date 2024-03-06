@@ -5,6 +5,17 @@
 
 /*GALERIA*/
 
+.main-galeria {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    @include flexs;
+    @include background;
+    background-image: url(../assets/Images/foto-galeria.jpg);
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+}
 
 .hero-card {
     display: flex;

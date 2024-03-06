@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 * {
   margin: 0;
   padding: 0;
@@ -43,6 +44,7 @@ body {
   height: 20%;
   position: sticky, 0;
 }
+
 .navbar .nav-list {
   gap: 10px;
   display: flex;
@@ -70,8 +72,8 @@ body {
 }
 
 .logo {
-  width: 15%;
-  height: 100%;
+  width: 30px;
+  height: 30px;
   border-radius: 100%;
 }
 
@@ -109,11 +111,13 @@ footer {
   font-family: "PatuaOne";
   font-weight: bold;
 }
+
 footer .footer-list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 footer .footer-text {
   display: flex;
   justify-content: center;
@@ -164,6 +168,7 @@ body {
   height: 20%;
   position: sticky, 0;
 }
+
 .navbar .nav-list {
   gap: 10px;
   display: flex;
@@ -191,9 +196,8 @@ body {
 }
 
 .logo {
-  width: 15%;
-  height: 100%;
-  border-radius: 100%;
+  width: 150px;
+  height: 150px;
 }
 
 .navbar-toggler {
@@ -230,11 +234,13 @@ footer {
   font-family: "PatuaOne";
   font-weight: bold;
 }
+
 footer .footer-list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 footer .footer-text {
   display: flex;
   justify-content: center;
@@ -260,11 +266,30 @@ body {
 }
 
 /*GALERIA*/
+
+.main-galeria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+  flex-direction: column;
+  background-color: rgb(66, 40, 28);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: unset;
+  background-position: center;
+  background-image: url(../assets/Images/foto-galeria.jpg);
+}
 .hero-card {
   display: flex;
   width: 100%;
   height: 600px;
 }
+
 .hero-card .hero-card-header {
   width: 50%;
   display: flex;
@@ -273,6 +298,7 @@ body {
   margin-top: 350px;
   margin-bottom: 350px;
 }
+
 .hero-card .hero-card-content {
   color: rgb(66, 40, 28);
   display: flex;
@@ -280,10 +306,13 @@ body {
   align-items: center;
   flex-direction: column;
   width: 50%;
-  padding: 10px;
+  padding: 30px;
 }
+
 .hero-card .carousel-inner {
-  height: 500px;
+  height: 400px;
+  display: flex;
+  align-items: center;
 }
 
 * {
@@ -330,6 +359,7 @@ body {
   margin: 0 auto 3rem;
   font-family: "Poppins";
 }
+
 .formulario legend {
   color: var(--secundario);
   text-align: center;
@@ -337,6 +367,7 @@ body {
   font-family: "Poppins";
   font-weight: 600;
 }
+
 .formulario .campo label {
   display: block;
   margin: 1rem 0 0.5rem 0;
@@ -344,6 +375,7 @@ body {
   width: 100%;
   font-weight: 200;
 }
+
 .formulario .campo input {
   border-radius: 0.5rem;
   padding: 5px;
@@ -352,6 +384,7 @@ body {
   height: 3rem;
   width: 100%;
 }
+
 .formulario .campo textarea {
   border-radius: 0.5rem;
   padding: 5px;
@@ -360,12 +393,14 @@ body {
   height: 8rem;
   width: 100%;
 }
+
 .formulario .boton-formulario {
   display: inline-block;
   width: 100%;
   text-align: right;
   margin: 10px;
 }
+
 .formulario .boton-formulario input {
   padding: 5px;
   border-radius: 0.5rem;
@@ -478,6 +513,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 80vh;
+  width: 100%;
   position: relative;
   overflow: hidden;
   background-color: rgb(66, 40, 28);
@@ -499,6 +535,7 @@ body {
   border-radius: 15px;
   border: 1px solid white;
 }
+
 .box img {
   object-fit: cover;
   filter: blur(2px);
@@ -509,6 +546,7 @@ body {
   width: 100%;
   height: 100%;
 }
+
 .box div {
   z-index: 3;
   border-radius: 14px;
@@ -560,42 +598,66 @@ b1 {
   .navbar-nav {
     margin-top: 10px;
   }
+
   .navbar-brand {
     margin-right: auto;
   }
 }
+
 @media only screen and (max-width: 767px) {
   .footer {
     display: flex;
     flex-direction: column;
   }
 }
-@media (max-width: 1000px) {
-  .container-visitanos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
+
 @media (max-width: 576px) {
   .container-mapa {
     width: 80%;
   }
 }
+
 @media (max-width: 768px) {
   .formulario {
     grid-column: auto;
     width: min(90vw, 100%);
     margin-bottom: 2rem;
   }
+
   .campo label {
     margin: 0.5rem 0;
   }
+
   .campo input,
   .campo textarea {
     height: 2.5rem;
   }
 }
+
+@media (max-width: 1152px) {
+  .container-visitanos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 988px) {
+  .navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  section.grid {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
 .main-inicio {
   margin: 0;
   padding: 0;
@@ -633,21 +695,25 @@ b1 {
   align-items: center;
   flex-direction: column;
   width: 500;
-  height: 500px;
+  height: 100%;
   padding: 10px;
   margin: 10px;
+  margin-top: 40px;
 }
+
 .transporte h2 {
   font-size: 32px;
   font-family: "PatuaOne";
   font-weight: bold;
   color: rgb(66, 40, 28);
 }
+
 .transporte li {
   font-size: 28px;
   font-family: "Poppins";
   font-weight: none;
   color: rgb(66, 40, 28);
+  list-style-type: circle;
 }
 
 iframe {
@@ -704,6 +770,7 @@ body {
   margin: 0 auto 3rem;
   font-family: "Poppins";
 }
+
 .formulario legend {
   color: var(--secundario);
   text-align: center;
@@ -711,6 +778,7 @@ body {
   font-family: "Poppins";
   font-weight: 600;
 }
+
 .formulario .campo label {
   display: block;
   margin: 1rem 0 0.5rem 0;
@@ -718,6 +786,7 @@ body {
   width: 100%;
   font-weight: 200;
 }
+
 .formulario .campo input {
   border-radius: 0.5rem;
   padding: 5px;
@@ -726,6 +795,7 @@ body {
   height: 3rem;
   width: 100%;
 }
+
 .formulario .campo textarea {
   border-radius: 0.5rem;
   padding: 5px;
@@ -734,12 +804,14 @@ body {
   height: 8rem;
   width: 100%;
 }
+
 .formulario .boton-formulario {
   display: inline-block;
   width: 100%;
   text-align: right;
   margin: 10px;
 }
+
 .formulario .boton-formulario input {
   padding: 5px;
   border-radius: 0.5rem;
@@ -770,6 +842,7 @@ body {
   width: 100%;
   height: 600px;
 }
+
 .hero-card .hero-card-header {
   width: 50%;
   display: flex;
@@ -778,6 +851,7 @@ body {
   margin-top: 350px;
   margin-bottom: 350px;
 }
+
 .hero-card .hero-card-content {
   color: rgb(66, 40, 28);
   display: flex;
@@ -787,6 +861,7 @@ body {
   width: 50%;
   padding: 10px;
 }
+
 .hero-card .carousel-inner {
   height: 500px;
 }
@@ -918,6 +993,7 @@ body {
   border-radius: 15px;
   border: 1px solid white;
 }
+
 .box img {
   object-fit: cover;
   filter: blur(2px);
@@ -928,6 +1004,7 @@ body {
   width: 100%;
   height: 100%;
 }
+
 .box div {
   z-index: 3;
   border-radius: 14px;
@@ -979,16 +1056,19 @@ b1 {
   .navbar-nav {
     margin-top: 10px;
   }
+
   .navbar-brand {
     margin-right: auto;
   }
 }
+
 @media only screen and (max-width: 767px) {
   .footer {
     display: flex;
     flex-direction: column;
   }
 }
+
 @media (max-width: 1000px) {
   .container-visitanos {
     display: flex;
@@ -996,25 +1076,30 @@ b1 {
     align-items: center;
   }
 }
+
 @media (max-width: 576px) {
   .container-mapa {
     width: 80%;
   }
 }
+
 @media (max-width: 768px) {
   .formulario {
     grid-column: auto;
     width: min(90vw, 100%);
     margin-bottom: 2rem;
   }
+
   .campo label {
     margin: 0.5rem 0;
   }
+
   .campo input,
   .campo textarea {
     height: 2.5rem;
   }
 }
+
 .textos h1 {
   font-size: 30px;
   font-family: "PatuaOne";
@@ -1026,6 +1111,7 @@ b1 {
   justify-content: center;
   align-items: center;
 }
+
 .textos h2 {
   font-size: 32px;
   font-family: "PatuaOne";
@@ -1037,6 +1123,7 @@ b1 {
   justify-content: center;
   align-items: center;
 }
+
 .textos h3 {
   font-size: 30px;
   font-family: "Poppins";
@@ -1048,6 +1135,7 @@ b1 {
   justify-content: center;
   align-items: center;
 }
+
 .textos p {
   font-size: 28px;
   font-family: "Poppins";

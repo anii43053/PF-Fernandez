@@ -35,7 +35,7 @@
 }
 
 .logo {
-    @include images (15%, 100%);
+    @include images(30px, 30px );
     border-radius: 100%;
 }
 
@@ -44,4 +44,3 @@
     font-size: 1.5rem;
     color: $second-light-color;
 }
-

@@ -15,13 +15,6 @@
     }
 }
 
-@media (max-width: 1000px) {
-    .container-visitanos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
 
 @media (max-width: 576px) {
     .container-mapa {
@@ -32,16 +25,40 @@
 @media (max-width: 768px) {
 
     .formulario {
-        grid-column: auto; 
-        width: min(90vw, 100%); 
-        margin-bottom: 2rem; }
+        grid-column: auto;
+        width: min(90vw, 100%);
+        margin-bottom: 2rem;
+    }
 
     .campo label {
-        margin: 0.5rem 0; 
+        margin: 0.5rem 0;
     }
 
     .campo input,
     .campo textarea {
-        height: 2.5rem; 
+        height: 2.5rem;
+    }
+
+}
+
+@media (max-width: 1152px) {
+    .container-visitanos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 988px) {
+    .navbar {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 520px) {
+    section.grid {
+        display: flex;
+        flex-direction: column;
     }
 }

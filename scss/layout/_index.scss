@@ -54,6 +54,7 @@
     li {
         @include fonts (28px, $mainFont, none);
         color: $secondColor;
+        list-style-type: circle
     }
 }
 
