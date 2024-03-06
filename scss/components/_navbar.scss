@@ -8,9 +8,9 @@
 .navbar {
     background-color: $mainColor;
     background: linear-gradient(45deg, rgb(59, 70, 43), $mainColor);
-    padding: 20px;
+    padding: 30px;
     margin-bottom: 10px;
-    height: 20%;
+    height: 30%;
     position: sticky, 0;
 
     .nav-list {
@@ -35,7 +35,7 @@
 }
 
 .logo {
-    @include images(30px, 30px );
+    @include images(20px, 20px );
     border-radius: 100%;
 }
 
